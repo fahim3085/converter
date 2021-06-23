@@ -1,0 +1,44 @@
+<script language="JavaScript">
+<!--
+function euroConverter(){
+document.converter.dollar.value = document.converter.euro.value * 1.470
+document.converter.pound.value = document.converter.euro.value * 0.717
+document.converter.bdt.value = document.converter.euro.value * 101
+}
+function dollarConverter(){
+document.converter.euro.value = document.converter.dollar.value * 0.680
+document.converter.pound.value = document.converter.dollar.value * 0.488
+document.converter.bdt.value = document.converter.dollar.value * 84
+}
+function poundConverter(){
+document.converter.dollar.value = document.converter.pound.value * 2.049
+document.converter.euro.value = document.converter.pound.value * 1.394
+document.converter.bdt.value = document.converter.pound.value * 118
+}
+function bdtConverter(){
+document.converter.dollar.value = document.converter.bdt.value * 0.012
+document.converter.pound.value = document.converter.bdt.value * 0.0085
+document.converter.euro.value = document.converter.bdt.value * .0099
+}
+//-->
+</script>
+
+<form name="converter">
+<table border="0" align="center">
+<tr>
+<td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+</tr>
+<tr>
+<td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+</tr>
+<tr>
+<td>British Pound:</td><td><input type="text" name="pound" onChange="poundConverter()" /></td>
+</tr>
+<tr>
+<td>Bangladeshi Taka: </td><td><input type="text" name="bdt" onChange="bdtConverter()" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="button" value="Enter/convert" /></td>
+</tr>
+</table>
+</form>
